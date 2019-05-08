@@ -3,6 +3,10 @@
 
 @include main;
 
+html {
+    scroll-behavior: smooth;
+}
+
 main, footer {
     padding: 2em 15em;
     @include clearfix;
@@ -97,6 +101,35 @@ section {
             text-decoration: none;
             text-transform: uppercase;
             &:hover {background-color: $red_dark;}
+        }
+    }
+}
+
+#pricing {
+    table {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        border-collapse: collapse;
+
+        th, td {
+            padding: 1em;
+        }
+
+        thead {
+            tr {
+                background-color: $main_red;
+            }
+            th {
+                color: white;
+            }
+            th:first-child {
+                background-color: $red_dark;
+            }
+        }
+        tbody {
+            tr { border-bottom: 1px solid $main_text_color; }
+                td:first-child { background-color: $grey_background; }
         }
     }
 }
