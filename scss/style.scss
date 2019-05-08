@@ -133,3 +133,24 @@ section {
         }
     }
 }
+
+footer {
+    background: black;
+    @include clearfix;
+
+    .logo {
+        border-bottom: 1px solid $main_red;
+        clear: both;
+    }
+
+    address, .map {
+        margin: 2em;
+    }
+
+    address {
+        float: left;
+    }
+    .map {
+        float: right;
+    }
+}
